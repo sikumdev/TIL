@@ -218,5 +218,8 @@ __marimo__/
 # 특정 폴더 무시
 00-intro/
 
+# 특정 파일 무시
+test_server.py
+
 # 메모 무시
 lotto api description
