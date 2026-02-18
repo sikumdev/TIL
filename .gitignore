@@ -223,3 +223,6 @@ test_server.py
 
 # 메모 무시
 lotto api description
+
+# 추가 무시 사항
+.DS_Store
