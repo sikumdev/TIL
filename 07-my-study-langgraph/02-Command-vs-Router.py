@@ -86,8 +86,18 @@ def classify_intent(state: EmailAgentState) -> Command[Literal["bug_tracking", "
     )
 
 # 그래프 연결 - 훨씬 단순!
+# add_node()해두면 langgraph가 알아서 이동 명령 내려줌
 graph.add_node("classify_intent", classify_intent)
+graph.add_node("bug_tracking", bug_tracking)
+
 # add_conditional_edges 필요 없음! ✅
+
+'''
+Command는 뭔가?  LangGraph에게 보내는 "업데이트+이동" 명령
+goto는 예약어?  Command의 예약어 파라미터 
+-> Command 필수?❌ 없어도 동작, 있으면 IDE 지원
+'''
+
 
 
 '''
