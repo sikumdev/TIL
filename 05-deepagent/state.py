@@ -4,7 +4,7 @@ from langgraph.graph import MessagesState
 
 class State(MessagesState):
     # messages
-    files: list
+    input_files: list
     upload_paths: list
 
 
