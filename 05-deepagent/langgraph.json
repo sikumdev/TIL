@@ -5,9 +5,10 @@
     },
     "env": "./.env",
     "python_version": "3.13",
-    "dependencies": [
-        "."
-    ],
+    "dependencies": ["."],
+    "http": {
+        "app": "./webapp.py:app"
+    },
     "checkpointer": {
         "type": "sqlite",
         "directory": "."
