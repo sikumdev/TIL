@@ -3,7 +3,7 @@
 from state import State
 
 def check_files(state: State):
-    files = state.get('files', [])
+    files = state.get('input_files', [])
 
     print(files)
 
